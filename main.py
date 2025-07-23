@@ -12,7 +12,6 @@ import os
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init() 
-newsapi = "340490d4833b4049b721c12eacf69d9c"
 
 def speak_old(text):
     engine.say(text)
@@ -39,7 +38,6 @@ def speak(text):
     os.remove("temp.mp3") 
 
 def aiProcess(command):
-    client = OpenAI(api_key="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",
     )
 
     completion = client.chat.completions.create(
